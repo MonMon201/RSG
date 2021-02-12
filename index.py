@@ -3,11 +3,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 import rsg
 
-n = 12
-W = 2400
-N = 1024
+n = 14
+W = 2500
+N = 64
 time = range(N)
 signal = rsg.getRandomSignal(n, W, N)
+
+print("Expected value", np.mean(signal))
+print("Variance", np.std(signal))
 
 fig, ax1 = plt.subplots()
 ax1.plot(time, signal)
