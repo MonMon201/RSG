@@ -5,7 +5,7 @@ import time
 def getRandomSignal(harmonicsAmount, limitFrequency, N):
     signal = [0] * N
     for i in range (harmonicsAmount):
-        w = limitFrequency / (i+1)
+        w = (limitFrequency / harmonicsAmount) * (i+1)
         A = random.random()
         Fi = random.random()
         for t in range(N):

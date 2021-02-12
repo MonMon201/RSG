@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import rsg
 
-n = 14
-W = 2500
-N = 64
+n = 12
+W = 2400
+N = 1024
 time = range(N)
 signal = rsg.getRandomSignal(n, W, N)
 
